@@ -16,10 +16,10 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+// import { GridItem } from '../components/grid-item'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+
+
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -37,15 +37,15 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie app developer based in Japan!
+        Hello, I&apos;m a software engineer from Virginia Tech!
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Weiting Li
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Software Developer/ Machine Learning Engineer  </p>
         </Box>
         <Box
           flexShrink={0}
@@ -64,10 +64,11 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/Weiting.jpg"
               alt="Profile image"
               borderRadius="full"
-              width="100"
+              objectFit="cover"
+              width="300"
               height="100"
             />
           </Box>
@@ -79,26 +80,13 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
+          Weiting is a software developer based in Virginia, USA with a
+          passion for building products he likes. He has a knack
           for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
-            Inkdrop
-          </Link>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <Link
-            as={NextLink}
-            href="https://www.youtube.com/devaslife"
-            passHref
-            target="_blank"
-          >
-            Dev as Life
-          </Link>
-          &quot; has more than 100k subscribers.
+          way to solving real-life problems with code. Recently, he is graduating from <strong>Virginia Tech</strong> with a 
+          Master&apos;s degree of Engineering in Computer Science. His main interests are software development, blockchain, LLM, AI..
+          
+          
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -118,22 +106,41 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>1997</BioYear>
+          Born in Chongqig (重庆), China.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2020</BioYear>
+          Graduated from the Bachelor&apos;s Program of
+          Computational Modeling & Data Analytics at Virginia Tech
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2023</BioYear>
+          Graduated from the master&apos;s of Engineering Program at Virginia Tech
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
+          <BioYear>Present</BioYear>Looking for a FT Software Engineer position (Fullstack)
+        </BioSection>
+      </Section>
+
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Work experience
+        </Heading>
+        <BioSection>
+          <BioYear>2018</BioYear>
+          Undergraduate Research Assistant for Parallel Computing Group@VT
+        </BioSection>
+        <BioSection>
+          <BioYear>2021</BioYear>
+          Machine Learning Engineer for VTTI (Virginia Tech Transporation Institute)
+        </BioSection>
+        <BioSection>
+          <BioYear>2022</BioYear>
+          Deep Learning Engineer at Commonwealth Cyber Initiative
+        </BioSection>
+        <BioSection>
+          <BioYear>2023 to Present</BioYear>Working for ZenAI as Software Engineer intern
         </BioSection>
       </Section>
 
@@ -142,21 +149,18 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
+          Basketball, Music
+          {/* <Link href="https://illust.odoruinu.net/" target="_blank">
             Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          </Link> */}
+          , Playing Guitar,
+           Photography, Board Game, Competitive Video Games, Machine Learning
         </Paragraph>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          On the web
+          My Links
         </Heading>
         <List>
           <ListItem>
@@ -166,46 +170,57 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @Github
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://www.linkedin.com/in/weiting-li-662215197/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                leftIcon={<IoLogoLinkedin/>}
               >
-                @inkdrop_app (English)
+                @Linkedin
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
+            <Link href="weitil6@Vt.edu" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                leftIcon={<EmailIcon/>}
               >
-                @craftzdog (日本語)
+                weitil6@vt.edu
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
-              >
-                @craftzdog
-              </Button>
-            </Link>
-          </ListItem>
+          {/* // <ListItem>
+          //   <Link href="https://twitter.com/craftzdog" target="_blank">
+          //     <Button
+          //       variant="ghost"
+          //       colorScheme="teal"
+          //       leftIcon={<IoLogoTwitter />}
+          //     >
+          //       @craftzdog (日本語)
+          //     </Button>
+          //   </Link>
+          // </ListItem>
+          // <ListItem>
+          //   <Link href="https://instagram.com/craftzdog" target="_blank">
+          //     <Button
+          //       variant="ghost"
+          //       colorScheme="teal"
+          //       leftIcon={<IoLogoInstagram />}
+          //     >
+          //       @craftzdog
+          //     </Button>
+          //   </Link>
+          // </ListItem> */}
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             href="https://www.youtube.com/devaslife"
             title="Dev as Life"
@@ -220,17 +235,17 @@ const Home = () => (
           >
             A Markdown note-taking app
           </GridItem>
-        </SimpleGrid>
+        </SimpleGrid> */}
 
-        <Heading as="h3" variant="section-title">
+        {/* <Heading as="h3" variant="section-title">
           Newsletter
         </Heading>
         <p>
           Join me on a behind-the-scenes coding journey. Weekly updates on
           projects, tutorials, and videos
-        </p>
+        </p> */}
 
-        <Box align="center" my={4}>
+        {/* <Box align="center" my={4}>
           <Button
             as={NextLink}
             href="https://www.devas.life/"
@@ -240,7 +255,7 @@ const Home = () => (
           >
             Sign up my newsletter here
           </Button>
-        </Box>
+        </Box> */}
       </Section>
     </Container>
   </Layout>

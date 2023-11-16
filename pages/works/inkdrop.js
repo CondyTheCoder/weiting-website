@@ -15,17 +15,17 @@ const Work = () => (
   <Layout title="Inkdrop">
     <Container>
       <Title>
-        Inkdrop <Badge>2016-</Badge>
+        Web3.0 Crowdfunding Website<Badge>2023</Badge>
       </Title>
       <P>
-        A Markdown note-taking app with 100+ plugins, cross-platform and
-        encrypted data sync support. The life-time revenue is more than $300k.
+      A Web 3.0 platform for crowdfunding campaigns on the blockchain, 
+          for transparent and traceable fundraising. You can post a campaign, 
       </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://www.inkdrop.app/">
-            https://www.inkdrop.app/ <ExternalLinkIcon mx="2px" />
+          <Link href="">
+            Help me deploy it by staring! <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -34,20 +34,21 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NodeJS, Electron, React Native</span>
+          <span>JavaScript, TailwindCSS, React.JS, and Thirdweb Framework</span>
         </ListItem>
         <ListItem>
-          <Meta>Blogpost</Meta>
-          <Link href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820">
-            How I’ve Attracted The First 500 Paid Users For My SaaS That Costs
-            $5/mo <ExternalLinkIcon mx="2px" />
+          <Meta>Source</Meta>
+          <Link href="https://github.com/lwtcxy/Crowdfunding-Application">
+          https://github.com/lwtcxy/Crowdfunding-Application <ExternalLinkIcon mx="2px" />
           </Link>
-        </ListItem>
+      </ListItem>
       </List>
 
-      <WorkImage src="/images/works/inkdrop_01.png" alt="Inkdrop" />
-      <WorkImage src="/images/works/inkdrop_02.png" alt="Inkdrop" />
-      <AspectRatio maxW="640px" ratio={1.7} my={4}>
+      <WorkImage src="/images/works/cf1.png" alt="Inkdrop" />
+      <WorkImage src="/images/works/cf2.png" alt="Inkdrop" />
+      <WorkImage src="/images/works/cf3.png" alt="Inkdrop" />
+      <WorkImage src="/images/works/cf4.png" alt="Inkdrop" />
+      {/* <AspectRatio maxW="640px" ratio={1.7} my={4}>
         <iframe
           src="https://www.youtube.com/embed/-qBavwqc_mY"
           title="YouTube video player"
@@ -55,7 +56,7 @@ const Work = () => (
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
-      </AspectRatio>
+      </AspectRatio> */}
     </Container>
   </Layout>
 )

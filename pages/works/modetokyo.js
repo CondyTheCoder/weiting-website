@@ -15,57 +15,41 @@ const Work = () => (
   <Layout title="mode.tokyo">
     <Container>
       <Title>
-        mode.tokyo <Badge>2016</Badge>
+        Decentralized AI Patient Record System <Badge>2022</Badge>
       </Title>
-      <P>The mode magazine for understanding to personally enjoy Japan.</P>
       <P>
-        It is one of the projects launched at{' '}
-        <Link href="https://innolab.jp/" target="_blank">
-          Open Innovation Lab (電通イノラボ) <ExternalLinkIcon mx="2px" />
-        </Link>
-        , aiming to visualize the impact of media contents on the visit of
-        foreign high-intellect class to Japan, who are highly interested in
-        Japanese culture. I joined the project to build its mobile app for iOS
-        where you can read free articles of the magazine.
+        This is an application that aims to help store sensitive data and help doctors diagnose potential Covid-19 positive
+based on specific features with secure data from blockchain network.
       </P>
-      <P>
-        電子版としてiOSアプリを担当。日英仏対応。
-        きゅんくんやラブリーサマーちゃんなどを誌面で取り上げている。
-        本雑誌はISIDイノラボ様と角川アスキー総合研究所様の共同プロジェクトです。
-      </P>
+      <P>We programmed a smart contract deployed to Ethereum network based on Ganache using Solidity for patients and doctors
+to upload medical data to the blockchain.</P>
+      <P>In addition, we developed a Flask + Vue.js web page for users to access results and for authorized individual to upload data to
+Ethereum; supported by MetaMask.</P>
+<P>At last, we applied a deep learning algorithm called svm (support vector machines) to help us predict if a patient is covid positive or not.</P>
 
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Platform</Meta>
-          <span>iOS</span>
+          <span>Web</span>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Swift</span>
+          <span>Solidity, Python, Tensorflow, MetaMask</span>
         </ListItem>
         <ListItem>
-          <Meta>Press release</Meta>
-          <Link href="https://www.isid.co.jp/english/news/release/2015/pdf/20150930_ModeTokyo.pdf">
-            ISID Starts a Research Project to Visualize Impact of Media Contents
-            on Visit of Foreign High-Intellect Class to Japan{' '}
-            <ExternalLinkIcon mx="2px" />
+          <Meta>PDF</Meta>
+          <Link href="https://github.com/lwtcxy/Blockchain-Medical-Record-System-with-Machine-Learning/blob/main/Blockchain-Report.pdf">
+          Report <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
-          <Meta>Press release</Meta>
-          <Link href="https://innolab.jp/news/achievement/335">
-            メディアコンテンツが訪日行動に与える影響を可視化する研究プロジェクトを始動{' '}
-            <ExternalLinkIcon mx="2px" />
+          <Meta>Source</Meta>
+          <Link href="https://github.com/lwtcxy/Blockchain-Medical-Record-System-with-Machine-Learning">
+          https://github.com/lwtcxy/Blockchain-Medical-Record-System-with-Machine-Learning <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
-
-      <WorkImage src="/images/works/modetokyo_eyecatch.png" alt="mode.tokyo" />
-      <SimpleGrid columns={2} gap={2}>
-        <WorkImage src="/images/works/modetokyo_01.png" alt="mode.tokyo" />
-        <WorkImage src="/images/works/modetokyo_02.png" alt="mode.tokyo" />
-      </SimpleGrid>
-      <WorkImage src="/images/works/modetokyo_03.jpg" alt="mode.tokyo" />
+      
     </Container>
   </Layout>
 )

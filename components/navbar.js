@@ -78,16 +78,16 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
+            Projects
           </LinkItem>
-          <LinkItem href="/wallpapers" path={path}>
-            Wallpapers
-          </LinkItem>
-          <LinkItem href="/posts" path={path}>
+          {/* <LinkItem href="/wallpapers" path={path}>
+            Photography
+          </LinkItem> */}
+          {/* <LinkItem href="/posts" path={path}>
             Posts
-          </LinkItem>
-          <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem>
-          <LinkItem
+          </LinkItem> */}
+          {/* <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem> */}
+          {/* <LinkItem
             target="_blank"
             href="https://github.com/craftzdog/craftzdog-homepage"
             path={path}
@@ -98,13 +98,13 @@ const Navbar = props => {
           >
             <IoLogoGithub />
             Source
-          </LinkItem>
+          </LinkItem> */}
         </Stack>
 
         <Box flex={1} align="right">
           <ThemeToggleButton />
 
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+          {/* <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}
@@ -136,7 +136,7 @@ const Navbar = props => {
                 </MenuItem>
               </MenuList>
             </Menu>
-          </Box>
+          </Box> */}
         </Box>
       </Container>
     </Box>
