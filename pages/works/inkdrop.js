@@ -43,10 +43,10 @@ const Work = () => (
       </ListItem>
       </List>
 
-      <WorkImage src="/images/works/cf1.png" alt="Inkdrop" />
-      <WorkImage src="/images/works/cf2.png" alt="Inkdrop" />
-      <WorkImage src="/images/works/cf3.png" alt="Inkdrop" />
-      <WorkImage src="/images/works/cf4.png" alt="Inkdrop" />
+      <WorkImage src="/images/works/cf1.PNG" alt="Inkdrop" />
+      <WorkImage src="/images/works/cf2.PNG" alt="Inkdrop" />
+      <WorkImage src="/images/works/cf3.PNG" alt="Inkdrop" />
+      <WorkImage src="/images/works/cf4.PNG" alt="Inkdrop" />
       {/* <AspectRatio maxW="640px" ratio={1.7} my={4}>
         <iframe
           src="https://www.youtube.com/embed/-qBavwqc_mY"
