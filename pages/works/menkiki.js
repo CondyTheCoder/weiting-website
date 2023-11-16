@@ -19,7 +19,9 @@ const Work = () => (
         Food Metaverse <Badge>2022</Badge>
       </Title>
       <P>
-      Welcome to New Meta, the innovative social media platform that reimagines the way we connect, share, and discover. Inspired by the familiar interface of Twitter, New Meta takes your social media experience to the next level with advanced, user-friendly features. Whether you're looking to engage with a global community, stay updated on the latest trends, or share your daily experiences, New Meta offers a seamless and dynamic platform for all. Our intuitive design ensures easy navigation and interaction, making it perfect for both seasoned social media users and newcomers.
+      Welcome to New Meta, the innovative social media platform that reimagines the way we connect, share, and discover. 
+      Inspired by the familiar interface of Twitter, New Meta takes your social media experience to the next level with advanced, user-friendly features. 
+      Whether you&apos;re looking to engage with a global community, stay updated on the latest trends, or share your daily experiences, New Meta offers a seamless and dynamic platform for all. Our intuitive design ensures easy navigation and interaction, making it perfect for both seasoned social media users and newcomers.
       </P>
       
       <UnorderedList my={4}>
