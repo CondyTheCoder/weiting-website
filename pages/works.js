@@ -3,7 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInkdrop from '../public/images/works/cf1.png'
+import thumbInkdrop from '../public/images/works/cf1.PNG'
  import thumbWalknote from '../public/images/works/bookstore.jpg'
  import thumbFourPainters from '../public/images/works/zoom-pic.webp'
  import thumbMenkiki from '../public/images/works/New-Meta1.png'
