@@ -106,7 +106,7 @@ const Home = () => (
         </Heading>
         <BioSection>
           <BioYear>1997</BioYear>
-          Born in Chongqig (重庆), China.
+          Born in Chongqing (重庆), China.
         </BioSection>
         <BioSection>
           <BioYear>2020</BioYear>
